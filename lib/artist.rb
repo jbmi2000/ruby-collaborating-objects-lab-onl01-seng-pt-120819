@@ -25,6 +25,7 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
+    save
   end
 
   def add_song(song)
@@ -32,7 +33,7 @@ class Artist
   end
 
   def save
-    @@all << self #saves the artist name to the all array
+    @@all << self
   end
 
   def self.all
