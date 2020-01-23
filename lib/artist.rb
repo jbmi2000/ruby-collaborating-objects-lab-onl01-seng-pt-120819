@@ -52,7 +52,9 @@ class Artist
   end
 
   def songs
-    songs.artist
+    Song.all.select do |songs|
+      songs.artist == self
+      
   end
 
   def print_songs
