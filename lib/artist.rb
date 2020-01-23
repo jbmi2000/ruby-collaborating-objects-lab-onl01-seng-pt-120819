@@ -54,7 +54,7 @@ class Artist
   def songs
     Song.all.select do |songs|
       songs.artist == self
-      
+
   end
 
   def print_songs
